@@ -17,10 +17,10 @@
   <p>FitSeconds ("the App", "we", "us", or "our") is a boxing and interval round timer for iOS and Android, with optional companion apps for Apple Watch and Wear OS. This Privacy Policy explains what the App does with information, what leaves your device, and what does not.</p>
 
   <h2>1. Summary</h2>
-  <p>The App has no accounts, no login, and no servers of ours. Your trainings and your training history are stored only on your device. Three things do send data off the device, and all three are described below: analytics, advertising in the free version, and the subscription purchase itself. Heart-rate readings, imported sounds, and your training history are never uploaded to us.</p>
+  <p>The App has no accounts, no login, and no servers of ours. Your trainings and your training history are stored only on your device. Four things do send data off the device, and all four are described below: analytics, crash reports, advertising in the free version, and the subscription purchase itself. Heart-rate readings, imported sounds, and your training history are never uploaded to us.</p>
 
   <h2>2. No Account and No Servers of Ours</h2>
-  <p>You do not create an account and we do not operate a backend. There is no profile, no cloud sync, and no way for us to look up what you have done in the App. The third parties named in sections 4 to 7 receive data directly under their own privacy terms; we receive aggregate reports, not your records.</p>
+  <p>You do not create an account and we do not operate a backend. There is no profile, no cloud sync, and no way for us to look up what you have done in the App. The third parties named in sections 4 to 8 receive data directly under their own privacy terms; we receive aggregate reports, not your records.</p>
 
   <h2>3. Information Stored on Your Device</h2>
   <p>The App keeps the following in its own private storage on your device, using a local database and standard system preferences:</p>
@@ -48,69 +48,75 @@
   <p><strong>The training name is content you typed.</strong> For a training you created yourself, whatever you called it is sent with the training_started event. If you would rather a name not leave your device, name the training something that does not identify you, or use a preset or the quick timer.</p>
   <p>Firebase additionally attaches information of its own to each event, including a randomly generated app-instance identifier, your device model, operating-system version, app version, approximate country, and language. Firebase does not receive your training history, your heart-rate readings, or the contents of your trainings beyond the name described above.</p>
 
-  <h2>5. Advertising</h2>
+  <h2>5. Crash Reports</h2>
+  <p>The App uses <a href="https://firebase.google.com/support/privacy" rel="external">Google Crashlytics</a> so that a crash can be found and fixed. When the App stops unexpectedly, a report is sent containing the state of the program at that moment, your device model and operating-system version, the App version, and how long the App had been running.</p>
+  <p>Each report also carries a little context about what the App was doing, because a crash during a training is a different fault from one anywhere else: whether a training was running, whether it came from your saved list, a preset or the quick timer, how many rounds it had, whether a heart-rate monitor was connected, and whether you were subscribed. <strong>No heart-rate readings, no training names, and nothing from your history are included.</strong></p>
+  <p>The App also reports a small number of failures it handled without telling you — for example, a finished training that could not be saved to Apple Health. These are counted so that a problem invisible to you is not also invisible to us.</p>
+  <p>Crash reports are not sent from development builds, and they are not used for advertising or for analytics about your behaviour.</p>
+
+  <h2>6. Advertising</h2>
   <p>The free version of the App shows ads. They are served through <a href="https://policies.google.com/technologies/ads" rel="external">Google AdMob</a>, which receives data directly from your device in order to select and measure ads. This typically includes a device advertising identifier where one is available, your IP address, device and operating-system details, approximate location derived from the IP address, and records of which ads were shown and interacted with.</p>
   <p>A rewarded video is also offered, which unlocks the premium sound packs for 24 hours. Watching one is entirely optional and involves the same advertising networks as any other ad.</p>
   <p><strong>Subscribers see no ads at all</strong>, and the advertising SDK is not asked to serve them. We do not sell your personal information, and we do not provide your training data to advertisers.</p>
   <p>On iOS, the App includes SKAdNetwork identifiers so Apple can attribute app installs without identifying you individually.</p>
 
-  <h2>6. Your Consent and Tracking Choices</h2>
+  <h2>7. Your Consent and Tracking Choices</h2>
   <p>Where the law requires consent before personalised advertising — including the EEA, the United Kingdom, and Switzerland — the App shows a consent form from Google's User Messaging Platform before any ad is requested. Your choices there are passed to the advertising networks.</p>
   <p>On iOS, the App also asks the system App Tracking Transparency question about tracking across other companies' apps and websites. The App explains why before asking, and it never asks before you have had a chance to use it. Declining changes nothing except how ads are selected.</p>
   <p>You can change your mind at any time. Privacy options are available inside the App, and both platforms let you reset or limit your advertising identifier in system settings — iOS under Privacy &amp; Security, Android under Settings for Google, Ads.</p>
 
-  <h2>7. Subscriptions and Payments</h2>
+  <h2>8. Subscriptions and Payments</h2>
   <p>Subscriptions are sold and processed entirely by Apple or Google. Payment is handled through Google Play Billing on Android and StoreKit on iOS, and <strong>we never see or receive your card details, billing address, or store account</strong>. The App learns only whether an entitlement is active and which plan it is, and stores that locally so it can keep working while offline.</p>
   <p>Apple's and Google's handling of your purchase is covered by their own privacy policies, not this one. Restoring a purchase asks the store, not us.</p>
 
-  <h2>8. Heart-Rate Monitors</h2>
+  <h2>9. Heart-Rate Monitors</h2>
   <p>Connecting a Bluetooth heart-rate monitor is optional and part of the subscription. When you use one, the App scans for nearby monitors, connects to the one you pick, and reads your heart rate during a training.</p>
   <p>Those readings are shown on screen during the run and saved with the session <strong>on your device</strong>. They are not uploaded to us and are not sent to the advertising or analytics services. The analytics event described in section 4 records only that a monitor was armed — never a heart rate.</p>
   <p>Bluetooth permission is requested so the App can find and connect to a monitor. On Android, the App declares that it does not derive location from Bluetooth scanning, and it does not request location permission.</p>
 
-  <h2>9. Apple Health and Health Connect</h2>
+  <h2>10. Apple Health and Health Connect</h2>
   <p>Saving finished trainings to Apple Health or Health Connect is <strong>off by default</strong>. Turning it on in Settings is what triggers the system permission request.</p>
   <p>When it is on, the App writes a completed training as a boxing workout, with one segment for each round and each rest. <strong>The App only writes. It does not read anything from Apple Health or Health Connect</strong>, and it does not ask for read access. The App's iOS submission includes a read-purpose string because Apple requires one wherever the authorisation API is referenced, but no read is ever requested.</p>
   <p>Data written to Apple Health or Health Connect is then held by that app under Apple's or Google's terms, and you can remove it there. Removing it from Apple Health or Health Connect does not remove it from the App's own history, and deleting a session in the App does not withdraw a workout already written.</p>
-  <p>On Apple Watch, the companion app starts a workout session and reads your heart rate from HealthKit on the watch, so the timer keeps running with your wrist down. That reading is sent to your phone over Apple's own device link and is handled exactly as in section 8.</p>
+  <p>On Apple Watch, the companion app starts a workout session and reads your heart rate from HealthKit on the watch, so the timer keeps running with your wrist down. That reading is sent to your phone over Apple's own device link and is handled exactly as in section 9.</p>
 
-  <h2>10. Watch Companions</h2>
+  <h2>11. Watch Companions</h2>
   <p>The Apple Watch and Wear OS companions show and control a training that is running on your phone. Run state and control messages travel between your own devices over the platform's own channel — Apple's WatchConnectivity, or Google Play Services' Wearable Data Layer. That traffic is between your devices; it does not pass through us.</p>
 
-  <h2>11. Imported Sounds</h2>
+  <h2>12. Imported Sounds</h2>
   <p>You can import your own audio files as round signals. The App reads the file you pick and copies it into its own private storage so it still plays after a restart. Imported audio is never uploaded, and the App does not read any other file on your device. Your file name is replaced with an internal identifier, and only the display name you see is kept.</p>
 
-  <h2>12. Permissions the App Requests</h2>
+  <h2>13. Permissions the App Requests</h2>
   <ul>
     <li><strong>Notifications</strong> — to show the running timer and its signals while the App is in the background.</li>
     <li><strong>Bluetooth</strong> — to find and connect to a heart-rate monitor. Asked only when you add one.</li>
     <li><strong>Body sensors</strong> (Wear OS) — to read heart rate on the watch. Asked only when a subscriber starts a training with heart rate enabled.</li>
     <li><strong>Apple Health / Health Connect</strong> — to save finished trainings. Asked only when you turn the switch on.</li>
-    <li><strong>App Tracking Transparency</strong> (iOS) — described in section 6.</li>
+    <li><strong>App Tracking Transparency</strong> (iOS) — described in section 7.</li>
   </ul>
   <p>Each is requested at the moment it is first needed, never on first launch as a batch, and declining any of them leaves the timer itself fully working.</p>
 
-  <h2>13. Support Communications</h2>
+  <h2>14. Support Communications</h2>
   <p>If you contact us by email we receive what you choose to include, such as your email address, device details, screenshots, and your message. We use it only to answer you and to fix the problem. Please do not send health information unless it is genuinely necessary to explain the issue.</p>
 
-  <h2>14. Data Retention and Deletion</h2>
+  <h2>15. Data Retention and Deletion</h2>
   <p>Your trainings, history, heart-rate records, imported sounds, and settings stay on your device until you delete them in the App, clear the App's data, or uninstall it. We hold none of it, so there is nothing for us to delete on request and nothing to export.</p>
-  <p>Analytics and advertising data held by Google is retained under its own policies and controlled through the settings in section 6. Support email is kept only as long as needed to handle the request or to meet a legal obligation, and you may ask us to delete your correspondence.</p>
+  <p>Analytics and advertising data held by Google and AppLovin is retained under their own policies and controlled through the settings in section 7. Support email is kept only as long as needed to handle the request or to meet a legal obligation, and you may ask us to delete your correspondence.</p>
 
-  <h2>15. Children's Privacy</h2>
+  <h2>16. Children's Privacy</h2>
   <p>The App is not directed to children and is not intended for use by anyone under 13, or under the minimum age of digital consent where you live if that age is higher. We do not knowingly collect personal information from children. If you believe a child has sent us information, contact us so we can delete it.</p>
 
-  <h2>16. Security</h2>
+  <h2>17. Security</h2>
   <p>Keeping your trainings and heart-rate records on the device, with no account and no server of ours, is the main protection: there is no central store of it to breach. Local data sits in the App's private storage, which the operating system keeps apart from other apps. No method of storage or transmission is completely secure. Keep your device and its operating system updated and protect access to the device itself.</p>
 
-  <h2>17. International Users and Your Rights</h2>
-  <p>Our third-party providers may process data in countries other than yours, including the United States, under their own transfer safeguards. Depending on where you live, you may have rights to access, correct, delete, or port personal data, to object to or restrict processing, and to withdraw consent. For data held by Google, exercise those rights through Google and through the consent and advertising-identifier controls in section 6. For anything you have sent us by email, contact us.</p>
-  <p>Our legal basis, where that concept applies, is your consent for personalised advertising and for the optional permissions, and our legitimate interest in understanding aggregate use and in keeping the App working for the analytics described in section 4.</p>
+  <h2>18. International Users and Your Rights</h2>
+  <p>Our third-party providers may process data in countries other than yours, including the United States, under their own transfer safeguards. Depending on where you live, you may have rights to access, correct, delete, or port personal data, to object to or restrict processing, and to withdraw consent. For data held by Google or AppLovin, exercise those rights through them and through the consent and advertising-identifier controls in section 7. For anything you have sent us by email, contact us.</p>
+  <p>Our legal basis, where that concept applies, is your consent for personalised advertising and for the optional permissions, and our legitimate interest in understanding aggregate use and in keeping the App working for the analytics and crash reports described in sections 4 and 5.</p>
 
-  <h2>18. Changes to This Policy</h2>
+  <h2>19. Changes to This Policy</h2>
   <p>We may update this Privacy Policy when the App or applicable requirements change. The updated policy will be posted on this page with a revised effective date. If a future version adds accounts, cloud sync, or any new category of data leaving the device, this policy and the store privacy information will be updated before that version ships.</p>
 
-  <h2>19. Contact</h2>
+  <h2>20. Contact</h2>
   <p>For privacy questions or requests, visit <a href="../support/">FitSeconds Support</a> or email <a href="mailto:safonchikigor@gmail.com?subject=FitSeconds%20Privacy">safonchikigor@gmail.com</a>.</p>
 </main>
 </body>
