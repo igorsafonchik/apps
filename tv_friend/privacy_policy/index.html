@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy Policy for the TVFriend universal TV remote and casting app for iOS and Android by Ihar Safonchyk.">
+  <title>Privacy Policy | TVFriend</title>
+  <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+<main class="page document">
+  <a class="back-link" href="../../">Back to Apps</a>
+  <p class="eyebrow">TVFriend</p>
+  <h1>Privacy Policy</h1>
+  <p class="updated">Effective date: November 12, 2026</p>
+
+  <p>TVFriend ("the App", "we", "us", or "our") is a remote control and casting app for iOS and Android. It controls smart TVs, streaming boxes, and game consoles over your Wi-Fi network, and sends photos, videos, files, web videos, and IPTV streams to them. This Privacy Policy explains what the App does with information, what leaves your device, and what does not.</p>
+
+  <h2>1. Summary</h2>
+  <p>The App has no accounts, no login, and no servers of ours. It talks to your TV directly over your local network, and what it remembers — your paired TVs, pairing keys, IPTV lists, and settings — is stored only on your device. <strong>The App contains no analytics, no crash reporting, and no advertising.</strong> The things that do reach the internet are the ones you ask for: web pages you open in the App, playlists and videos you choose to cast, purchases made through Apple or Google, and an email if you contact us.</p>
+
+  <h2>2. No Account and No Servers of Ours</h2>
+  <p>You do not create an account and we do not operate a backend. There is no profile, no cloud sync, and no way for us to see which TVs you own, what you watch, or what you cast. The third parties named in sections 6 to 10 handle data directly under their own privacy terms.</p>
+
+  <h2>3. Your Local Network</h2>
+  <p>To find TVs, the App looks for them on the Wi-Fi network your phone is connected to, using standard discovery methods such as Bonjour/mDNS and SSDP/UPnP, and by checking the addresses of devices that answer. On iOS this is why the App asks for <strong>Local Network</strong> access. Once you pick a TV, the App connects to it directly and sends it the commands you press — keys, volume, channel, touchpad movements, text you type on the on-screen keyboard, and app launches.</p>
+  <p>This traffic goes between your phone and your TV on your own network. It does not pass through us. Some TV makers' protocols are unencrypted, which means another device on the same network could in principle observe it; use the App on networks you trust.</p>
+  <p>The App reads the information your TVs publish about themselves on the network, such as their name, model, brand, address, and the list of apps installed on them, so it can show and control them.</p>
+
+  <h2>4. Information Stored on Your Device</h2>
+  <p>The App keeps the following in its own private storage on your device, using a local database and standard system preferences:</p>
+  <ul>
+    <li>Paired TVs: each TV's name, brand, network address and port, and when you last connected to it.</li>
+    <li>Pairing credentials: the keys, tokens, or certificates a TV issues when you pair with it, so you are not asked for a code every time.</li>
+    <li>The apps each TV reported as installed, with their names and icons, so the Apps screen loads quickly.</li>
+    <li>IPTV channels and streams you add: the names you give them, their links, and the channel list and logos read from a playlist.</li>
+    <li>Files you send to the App from the system share sheet, copied into the App's own storage so you can cast them later.</li>
+    <li>A temporary copy of a video fetched from the internet for casting (section 7), held in the App's cache and replaced by the next one.</li>
+    <li>Settings: haptic feedback, auto-send pairing code, wake TV on connect, and whether a subscription is active.</li>
+  </ul>
+  <p>None of this is sent to us. You can remove TVs in Settings with <strong>Forget paired devices</strong>, delete IPTV entries and shared files in the App, and deleting the App removes all of it. Clearing the App's data from system settings has the same effect.</p>
+  <p>Your device's own backup — iCloud or computer backup on iOS, Google backup on Android — may include this data if you have backups turned on. Those backups are handled by Apple or Google under their terms, not by us.</p>
+
+  <h2>5. Photos, Videos, and Files You Cast</h2>
+  <p>When you cast a photo or video from your phone, the App reads the item you picked and serves it to your TV from a small temporary web server on your phone, on your local network. The TV fetches it from there. <strong>Your photos, videos, and files are never uploaded to us or to any server</strong> by this process.</p>
+  <p>While a cast is running, the item being cast can be reached by its address from other devices on the same Wi-Fi network. Only the item currently being cast is published, and the server stops when the cast ends.</p>
+  <p>On iOS the App asks for <strong>Photos</strong> access, and on Android for access to <strong>photos and videos</strong>, so it can list them for you to choose. You can grant access to selected items only, and declining leaves the remote and all other features working.</p>
+
+  <h2>6. Web Videos, YouTube, and TikTok</h2>
+  <p>The Cast tab includes an in-app browser, with shortcuts to YouTube and TikTok, so you can find a video and send it to your TV. Pages you open there are loaded directly from those websites. <strong>Those websites can collect information as they would in any browser</strong> — including your IP address, cookies, what you view, and anything you type or sign in with — under their own privacy policies, such as <a href="https://policies.google.com/privacy" rel="external">Google's</a> for YouTube and <a href="https://www.tiktok.com/legal/privacy-policy" rel="external">TikTok's</a>.</p>
+  <p>To find a video to cast, the App inspects the page that is open in its browser. The address of the video you choose is sent to your TV, which then plays it from the website directly. Where a TV cannot fetch a video itself, the App downloads that one video to its cache on your phone and serves it to the TV as in section 5. We do not receive the pages you visit or the videos you cast.</p>
+
+  <h2>7. IPTV Playlists and Streams</h2>
+  <p>You can add playlist and stream links of your own. When you do, the App downloads the playlist from the address you entered to read its channels, and may load channel logos from the addresses listed in it. The TV then plays the stream from its source. These requests go directly to the servers you named, which can see your IP address like any other web server. <strong>The App does not provide any IPTV content or playlists</strong>, and we do not receive the links you add.</p>
+
+  <h2>8. Google Cast and Amazon Fling</h2>
+  <p>To cast to Chromecast, Google TV, Android TV, and other Cast-enabled devices, the App uses the Google Cast SDK. On Android it is provided by Google Play services. Google may collect device and usage information through it under the <a href="https://policies.google.com/privacy" rel="external">Google Privacy Policy</a>. The iOS version uses Google's Cast SDK build without Bluetooth.</p>
+  <p>On Android, casting to Amazon Fire TV uses Amazon's Fling SDK, which discovers and talks to Fire TV devices on your local network. Amazon's handling of any data is governed by the <a href="https://www.amazon.com/privacy" rel="external">Amazon Privacy Notice</a>.</p>
+
+  <h2>9. Subscriptions and Payments</h2>
+  <p>Premium subscriptions are sold and processed entirely by Apple through the App Store or by Google through Google Play. <strong>We never see or receive your card details, billing address, or store account.</strong> The App learns only whether a subscription is active and which plan it is, and stores that locally so it keeps working offline. Restoring a purchase asks the store, not us. Apple's and Google's handling of your purchase is covered by their own privacy policies.</p>
+
+  <h2>10. Links Out of the App</h2>
+  <p>Leave a review, Share this app, Terms of Use, Privacy Policy, and some help links open the App Store, Google Play, your browser, or your share sheet. What happens there is governed by those services, not by this policy.</p>
+
+  <h2>11. Permissions the App Requests</h2>
+  <ul>
+    <li><strong>Local Network</strong> (iOS) — to find TVs on your Wi-Fi and connect to them. Android grants network access to apps without a prompt; the App declares Wi-Fi state and multicast access for discovery.</li>
+    <li><strong>Photos / photos and videos</strong> — to list items you can cast. Asked only when you open the photo or video screens.</li>
+    <li><strong>Vibration</strong> (Android) — for haptic feedback on key presses, which you can turn off in Settings.</li>
+  </ul>
+  <p>The App does not request your location, contacts, camera, microphone, or Bluetooth, and declining any permission leaves the rest of the App working.</p>
+
+  <h2>12. Support Communications</h2>
+  <p>If you contact us from <strong>Contact support</strong>, your mail app opens a message that already contains your device model, operating-system version, and App version, so we can help without a second round of questions. You can see and edit that text before sending. We receive what you choose to send, such as your email address, those details, screenshots, and your message, and use it only to answer you and to fix the problem.</p>
+
+  <h2>13. Data Retention and Deletion</h2>
+  <p>Everything in section 4 stays on your device until you delete it in the App, clear the App's data, or uninstall it. We hold none of it, so there is nothing for us to delete on request and nothing to export. Support email is kept only as long as needed to handle the request or to meet a legal obligation, and you may ask us to delete your correspondence.</p>
+
+  <h2>14. Children's Privacy</h2>
+  <p>The App is not directed to children and is not intended for use by anyone under 13, or under the minimum age of digital consent where you live if that age is higher. We do not knowingly collect personal information from children. If you believe a child has sent us information, contact us so we can delete it.</p>
+
+  <h2>15. Security</h2>
+  <p>Keeping your data on the device, with no account and no server of ours, is the main protection: there is no central store of it to breach. Local data sits in the App's private storage, which the operating system keeps apart from other apps. Connections to TVs use whatever security each manufacturer's protocol provides, which varies by brand. No method of storage or transmission is completely secure. Keep your device, your TV, and your Wi-Fi password protected.</p>
+
+  <h2>16. International Users and Your Rights</h2>
+  <p>Third parties named in this policy may process data in countries other than yours, including the United States, under their own transfer safeguards. Depending on where you live, you may have rights to access, correct, delete, or port personal data, to object to or restrict processing, and to withdraw consent. For data held by Apple, Google, Amazon, TikTok, or the websites you visit, exercise those rights with them. For anything you have sent us by email, contact us.</p>
+
+  <h2>17. Changes to This Policy</h2>
+  <p>We may update this Privacy Policy when the App or applicable requirements change. The updated policy will be posted on this page with a revised effective date. If a future version adds accounts, analytics, crash reporting, advertising, or any other new category of data leaving the device, this policy and the store privacy information will be updated before that version ships.</p>
+
+  <h2>18. Contact</h2>
+  <p>For privacy questions or requests, email <a href="mailto:safonchikigor@gmail.com?subject=TVFriend%20Privacy">safonchikigor@gmail.com</a>.</p>
+</main>
+</body>
+</html>
