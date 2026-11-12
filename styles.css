@@ -167,6 +167,10 @@ p {
   backdrop-filter: blur(16px);
 }
 
+.app-card + .app-card {
+  margin-top: 24px;
+}
+
 .icon-frame {
   width: 96px;
   height: 96px;
@@ -283,6 +287,10 @@ p {
     grid-template-columns: 78px 1fr;
     padding: 18px;
     min-height: 0;
+  }
+
+  .app-card + .app-card {
+    margin-top: 16px;
   }
 
   .icon-frame {
